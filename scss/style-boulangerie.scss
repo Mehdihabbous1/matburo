@@ -1,0 +1,100 @@
+.content__solution__restauration{
+	@extend .content__commerce--detail;
+	h3{
+		width: 59%;
+		@media screen and (max-width: 39.9375em) {
+			width: 100%;
+		} 
+	}
+}
+
+.content__restauration--fonctionnalite{
+	@extend .content__commerce--fonctionnalite;
+}
+
+.content__boulangerie__ticket{
+	@extend .content__experience;
+	.has_border{
+		width: 90%;
+		@media screen and (max-width: 39.9375em) {
+			width: 100%;
+		} 
+	}
+	.parag2{
+		p{
+			margin-bottom: 0rem;
+    		line-height: 1.7;
+		}
+	}
+}
+
+.content__boulangerie__commandes{
+	@extend .content__experience;
+	.row-full{
+		flex-direction: row-reverse;
+		.b_txt{
+		top: 60%;
+			.has_border{
+			width: 75%;
+			@media screen and (max-width: 39.9375em) {
+				width: 100%;
+			} 
+			}
+			.parag2{
+				p{
+					margin-bottom: 0rem;
+		    		line-height: 1.7;
+				}
+			}
+		}
+	}	
+}
+
+.content__boulangerie__fidelite{
+	@extend .content__experience;
+	.has_border{
+		width: 70%;
+		@media screen and (max-width: 39.9375em) {
+			width: 100%;
+		} 
+	}
+	.parag2{
+		p{
+			margin-bottom: 0rem;
+    		line-height: 1.7;
+		}
+	}
+}
+
+.content__boulangerie__vente{
+	@extend .content__experience;
+	.row-full{
+		flex-direction: row-reverse;
+	}	
+}
+
+.content__boulangerie__gestion{
+	@extend .content__experience;
+}
+
+.content_boulangerie_slider{
+	@extend .content_commerce_slider;
+	.commerce_slider--title{
+		.has_border{
+			@media screen and (max-width: 39.9375em) {
+				margin: 0;
+				text-align: center;
+			} 
+		}
+	}
+}
+
+.boulangerie_slider_exemple{
+	@extend .commerce_slider_exemple;
+}
+
+.content_boulangerie_devis{
+	@extend .content_fidelite_devis;	
+}
+
+

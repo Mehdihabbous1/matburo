@@ -1,0 +1,61 @@
+.content__qui__sommes{
+	@extend .content__secteur--activite;
+		/*.experience, .proximité, .innovation, .service{
+		display: flex;
+	    position: absolute;
+	    left: 19%;
+	    z-index: 2;
+	    color: #fff;
+		    .icon{
+		    	margin-right: 1rem;
+		    	width: 20px;
+		    }
+		}*/
+		.content__options{
+			ul{
+				list-style: none;
+				font-size: 18px;
+				li{
+					text-decoration: none;
+					&:before{
+						content:"";
+						background-image: url("../images/58.png");
+						width: 20px;
+						height: 20px;
+						background-size: 100%;
+						position: absolute;
+					}
+				}
+			}
+		}
+
+}
+
+.content__qui__sommes__materiel{
+	@extend .content__boulangerie;
+	.b_txt{
+		.has_border{
+			width: 65%;
+		}
+		p{
+			width: 92%;
+		}
+	}
+}
+.content__qui__sommes__solution{
+	@extend .content__experience;
+	.has_border{
+		width: 85%;
+	}
+}
+.content__qui__sommes__activite{
+	@extend .content__activite;
+	.row{
+		.item{
+			text-align: center;
+		}
+	}
+}
+
+
+

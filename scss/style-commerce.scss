@@ -1,0 +1,128 @@
+.content__commerce--detail{
+	@extend .content__secteur--activite;
+	h3{
+		width: 85%;
+			@media screen and (max-width: 39.9375em) {
+			    width: 100%;
+		    } 
+	}
+}
+.content__commerce--fonctionnalite{
+	@extend .content__activite;
+	padding-bottom: 4rem;
+			@media screen and (max-width: 39.9375em) {
+			    padding-bottom: 2rem;
+		    } 
+	.commerce_column{
+		.commerce_item{
+		display: flex;
+	    align-items: center;
+		    @media screen and (max-width: 39.9375em) {
+				justify-content: center;
+
+			} 
+	    h3{
+	    	font-size: 16px;
+	    	color: #2236AA;
+	    	padding-left: 1rem;
+	    	}
+	    }
+    p{
+    	font-size: 16px;
+	    line-height: 2;
+	    padding: 2rem 0;
+	    color: #5F5F5F;
+     }
+	
+}
+}
+
+.content__commerce--office{
+	@extend .content__experience;
+}
+
+.content__commerce--gestion{
+	@extend .content__experience;
+	.row-full{
+		flex-direction: row-reverse;
+	}
+}
+.content_commerce_slider{
+	@extend .content__commerce--fonctionnalite;
+	background-color: #fff; 
+	.slider_item{
+		h5{
+	    	text-align: center;
+		    padding-top: 2rem;
+		    color: #2236AA;
+	    }
+	    @media screen and (max-width: 39.9375em) {
+			.img_ipad{
+	    		width: 210px;
+	    	}
+		}
+	    
+	}
+	.slider_img{
+		position: relative;
+	    background: #F5F5F5;
+	    padding: 28px 0;
+	    font-size: 0px;
+	    img{
+	    	margin: 0 auto;
+	    }
+	}
+	.slider_ipad{
+		padding-top: 3.3rem;
+	}
+	.slick-dots{
+		margin: 0 auto;
+		li{
+			background: #E3E3E3;
+			width: 15px;
+			height: 15px;
+			border-radius: 100%;
+			display: inline-block;
+			margin: 0 7px;
+			font-size: 0;
+			&.slick-active{
+				background: #2236AA;
+			}
+		}
+	}
+}
+
+.commerce_slider_exemple{
+	@extend .content__commerce--fonctionnalite;
+	background-color: #fff; 
+	.has_border{
+		margin-top: 2rem;
+	}
+	.slider-nav{
+	.slick-dots{
+		margin: 0 auto;
+		padding: 2rem 0;
+		li{
+			background: #E3E3E3;
+			width: 15px;
+			height: 15px;
+			border-radius: 100%;
+			display: inline-block;
+			margin: 0 7px;
+			font-size: 0;
+			&.slick-active{
+				background: #2236AA;
+			}
+		}
+	}
+}
+}
+
+.content_commerce_devis{
+	@extend .content_fidelite_devis;
+}
+
+
+
+
+

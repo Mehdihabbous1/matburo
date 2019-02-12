@@ -1,0 +1,31 @@
+.content__mentions{
+	.row{
+		padding: 4rem 0 10rem 0;
+		h1{
+			font-size: 37px;
+	    	color: #2236AA;
+	    	padding-bottom: 4rem;
+	    	@media screen and (max-width: 39.9375em) {
+		    	font-size: 30px;
+		    }   
+		}
+		p{
+			font-size: 15px;
+			color: #707070;
+			@media screen and (max-width: 39.9375em) {
+		    	font-size: 13px;
+		    }   
+			a{
+				color: #2236AA;
+				text-decoration: underline;
+			}
+		}
+		h2{
+			font-size: 22px;
+			color: #2236AA;
+			@media screen and (max-width: 39.9375em) {
+		    	font-size: 20px;
+		    }   
+		}
+	}	
+}

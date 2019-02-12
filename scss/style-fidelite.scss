@@ -1,0 +1,223 @@
+.content__fidelisation--activite{
+	@extend .content__secteur--activite;
+	@media only screen and (max-width: 860px) {
+	    h3{font-size: 25px;}
+	    p{font-size: 18px;}
+  	}
+}
+
+.content__fidelite__commerce{
+	@extend .content__activite;
+	@media screen and (max-width: 39.9375em) {
+		padding-bottom: 0;
+	}
+	.title{
+ 		padding-bottom: 4rem;
+ 		@media screen and (max-width: 39.9375em) {
+			text-align: center;
+
+		}  
+	}
+	.title_has_border{
+		@extend .has_border;
+		font-size: 28px;
+	}	
+	.activite_column{
+	text-align: center;
+	.fidelite_item{
+		padding-bottom: 1rem;
+	}
+	h3{
+		font-size: 20px;
+		color: #2236AA;
+		@media screen and (max-width: 39.9375em) {
+			font-size: 17px;
+		}  
+	}
+}
+	@media only screen and (max-width: 860px) {
+	    .title_has_border{
+	    	font-size: 23px;
+	    	margin-top: 4rem;
+	    }
+	    .fidelite_item_title{
+	    	font-size: 18px;
+	    }
+	    
+  	}
+}
+
+.content__carte--fidelite{
+	@extend .content__experience;
+	.background_image{
+		background: #F2CB2A;
+	}
+	.has_border{
+		width: 60%;
+		@media screen and (max-width: 39.9375em) {
+			width: 85%;
+		} 
+	}
+	@media only screen and (max-width: 860px) {
+	    h3{font-size: 25px;}
+	    p{font-size: 18px;}
+  	}
+}
+
+.content__programme--fidelite{
+	@extend .content__experience;
+	.row-full{
+		flex-direction: row-reverse;
+	}
+	.background_image{
+		background: #54BC7B;
+	}
+	.has_border{
+		width: 75%;
+		@media screen and (max-width: 39.9375em) {
+			width: 85%;
+		} 
+	}
+}
+
+.content__fidelite--client{
+	@extend .content__experience;
+	.background_image{
+		background: #4AB7E8;	
+    	text-align: center;
+    	.img_imac{
+    		margin: 5rem;
+    		@media screen and (max-width: 39.9375em) {
+			    margin: 2rem;
+		    } 
+    	}
+	}
+	.has_border{
+		width: 65%;
+		@media screen and (max-width: 39.9375em) {
+		    width: 85%;
+	    } 
+	}
+	@media only screen and (max-width: 860px) {
+	    .img_imac{
+    		margin: 0 1rem 0 1rem;
+    		@media screen and (max-width: 39.9375em) {
+			    width: 17rem;
+		    }  
+    	}
+    	.content__experience--title{
+    		padding-bottom: 1rem;
+    	}
+    	.has_border{
+    		width: 90%;
+    		font-size: 26px;
+    		@media screen and (max-width: 39.9375em) {
+			    width: 85%;
+    			font-size: 22px;
+		    } 
+    	}
+  	}
+}
+
+.content__interaction--client{
+	@extend .content__experience;
+	.row-full{
+		flex-direction: row-reverse;
+	}
+	.background_image{
+		background: #E5EBFF;
+	}
+	.has_border{
+		width: 75%;
+		@media screen and (max-width: 39.9375em) {
+		    width: 100%;
+			font-size: 25px;
+		}
+	}
+}
+
+.content__fonctionnalite{
+	@extend .content__experience;
+	.background_image{
+		background: #E5EBFF;	
+    	text-align: center;
+	}
+	p{
+		margin-bottom: 2rem;
+		@media screen and (max-width: 39.9375em) {
+		    margin-bottom: 1rem;
+		}
+	}
+}
+
+
+
+.content_fidelite_devis{ 
+	padding-bottom: 4rem;
+	text-align: center;
+	padding-top: 4rem;
+	background-image: url('../images/11.png');
+	background-size: cover;
+	position: relative;
+	&:after
+	{
+		content:'';
+		position:absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: rgba(34,54,170,.6);
+		z-index: 1;
+	}
+	.content__devis--descri{
+		color: white;
+		position: relative;
+		z-index: 2;
+		.has_border
+		{
+			font-size: 30px;
+			font-family: 'Biryani' , sans-serif;
+			&:after{
+				    	content:"";
+				    	display: block;
+				    	width: 72px;
+				    	height: 4px;
+				    	background-color:$yellow;
+				    	bottom: 0;
+				    	margin-left: 47%;
+				    	@media screen and (max-width: 39.9375em) {
+						    margin-left: 38%;
+						    margin-top: 1rem;
+					    }  
+					}
+			@media screen and (max-width: 39.9375em) {
+			    font-size: 25px;
+		    }   
+		}
+		p{
+			padding-top: 20px;
+			font-size: 16px;
+			font-family: 'Biryani' , sans-serif;
+			margin: 3rem 0 2rem 0;
+			@media screen and (max-width: 39.9375em) {
+			    font-size: 14px;
+		    }  
+		}
+		button{
+			border:2px solid white;
+			background: none;
+			padding: 10px;
+			color: #fff;	
+		}
+		.button.hollow:hover, .button.hollow:focus{
+			border-color: #F2CB2A;
+			color: #fff;
+		}
+
+	}
+}
+
+footer{
+	@extend footer;
+}

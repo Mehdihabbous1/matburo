@@ -1,0 +1,132 @@
+.content__produit{
+	position: relative;
+	padding: 3rem 0;
+	.row{
+		justify-content: space-evenly;
+		.menu__produit{
+		z-index: 2;
+		padding-left: 0;
+			h1{
+				font-size: 28px;
+				padding-left: 1.5rem;
+				color: #2236AA;
+				font-weight: bold;
+				margin-bottom: 2rem;
+			}
+			h2{
+				font-size: 22px;
+				padding-left: 1.5rem;
+				color: #2236AA;
+				font-weight: bold;	
+			}
+			.has_border{
+				&:after{
+					content: '';
+					width: 70%;
+				    height: 2px;
+				    display: block;
+				    background-color: #2236AA;
+				}
+			}
+			.vertical{
+    			li{
+    				padding-bottom: 0.5rem;
+    				a{
+    					&:after{
+						content: '';
+						width: 0px;
+					    height: 3px;
+					    display: block;
+					    background-color: #F2CB2A;
+					    transition: all .4s ease;
+
+						}
+						&:hover::after{
+							width: 20%;
+		    				transition: all .4s ease;
+						}
+    				}
+    				h2{
+    					font-size: 22px;
+    				}
+    				
+    			}
+	    	}
+			a{
+				color: #2236AA;
+			}
+			.gras{
+				font-weight: bold;
+			}
+		}
+		.produit__item{
+			padding-bottom: 2rem;
+			.produit{
+				background-color: #F5F5F5;
+	    		text-align: center;
+	    		
+	    		.produit-item-img{
+	    			padding: 3rem 0;
+	    			&:after{
+    				    content: '';
+					    display: block;
+					    width: 23.75rem;
+					    height: 23.75rem;
+					    background-image: url(../images/57.png);
+					    background-size: 100%;
+					    position: absolute;
+					    z-index: 0;
+					    top: 40%;
+					    left: 50%;
+					    transform: translate(-50%, -50%);
+	    			}
+	    		}
+				h3{
+					a{
+						font-size: 22px;
+						padding-top: 2rem;
+						color: #2236AA;
+	
+					}
+				}
+				p{
+					color: #9A9A9A;
+				}
+				/*&:before{
+					    content: "";
+					    display: block;
+					    width: 120%;
+					    height: 70%;
+					    background: url(../images/55.png) center no-repeat;
+					    background-size: 101%;
+					    margin-right: -17%;
+				}*/
+				&:after{
+					content: '';
+					width: 0px;
+				    height: 5px;
+				    display: block;
+				    position: relative;
+				    bottom: -5px;
+				    background-color: #F2CB2A;
+				    transition: all .4s ease;
+
+				}
+				&:hover::after{
+					width: 100%;
+    				transition: all .4s ease;
+				}
+			}
+		}
+
+	}
+	&:after{
+	    	content: "";
+		    display: block;
+		    width: 27%;
+		    height: 100%;
+		    background-color: #F5F5F5;
+		    position: absolute;
+		    bottom: 0;
+		    }
+}

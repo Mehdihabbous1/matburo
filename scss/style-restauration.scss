@@ -1,0 +1,62 @@
+.content__solution__restauration{
+	@extend .content__commerce--detail;
+	h3{
+		width: 59%;
+	}
+}
+
+.content__restauration--fonctionnalite{
+	@extend .content__commerce--fonctionnalite;
+}
+
+.content__restauration__imprimante{
+	@extend .content__experience;
+	.has_border{
+		width: 75%;
+	}
+}
+
+.content__restauration--telecommande{
+	@extend .content__experience;
+	.row-full{
+		flex-direction: row-reverse;
+		.b_txt{
+		top: 60%;
+			.has_border{
+			width: 87%;
+			}
+		}
+	}	
+}
+
+.content__restauration__statistiques{
+	@extend .content__experience;
+	.has_border{
+		width: 45%;
+	}
+}
+
+.content__restauration--stock{
+	@extend .content__experience;
+	.row-full{
+		flex-direction: row-reverse;
+	}	
+}
+
+.content__restauration__clients{
+	@extend .content__experience;
+}
+
+.content_restauration_slider{
+	@extend .content_commerce_slider;
+}
+
+.restauration_slider_exemple{
+	@extend .commerce_slider_exemple;
+}
+
+.content_restauration_devis{
+	@extend .content_fidelite_devis;	
+}
+
+

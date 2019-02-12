@@ -1,0 +1,137 @@
+
+.accordion{
+	border-bottom: 1px solid #707070;
+	.accordion-item{
+		a{
+			color: #5F5F5F;
+			&:before{
+			content: "\e902";
+			color: #707070;
+			font-family: 'icomoon';
+			font-size: 10px;
+			}
+		}
+	}
+	.is-active{
+		a{
+			color: #2236AA;
+			&:before{
+			content: "\e901";
+			color: #707070;
+			font-family: 'icomoon';
+			font-size: 10px;
+			}
+		}
+	}
+}
+.content_fiche_title{
+
+	background: #F5F5F5;
+	padding-bottom: 2rem;
+	.row{
+		.titre{
+			display: flex;
+			padding: 5rem 0 0 0;
+			margin-left: 3rem;
+			h6{
+				margin-right: 1rem;
+				color: #5F5F5F;
+			}
+		}
+	}
+	@media screen and (max-width: 39.9375em) {
+		display: none;
+	}
+}
+.content_fiche_produit{
+	background: #F5F5F5;
+	.small_pic{
+		img{
+		background: #fff;
+    	padding: 5px;
+    	margin-bottom: 1rem;
+    	width: 90px;
+		}
+	}
+	.large_pic{
+		padding-bottom: 10rem;
+		.triangle{
+			position: relative;
+		}
+		.produit_pic{
+			position: absolute;
+		    top: 35%;
+		    right: 43%;
+		    display: block;
+		    @media screen and (max-width: 39.9375em) {
+				position: absolute;
+			    top: 45%;
+			    right: 8%;
+			    display: block;
+			    width: 300px;
+			}
+		}
+		.produit_discri{
+			h1{
+				font-size: 30px;
+    			color: #2236AA;
+			}
+			h6{
+				color: #2236AA;
+			}
+			a{
+				text-decoration: underline;
+				h6{
+					padding: 1rem 0;
+				}
+			}
+			.accordion-title{
+				background: #F5F5F5;
+				border: #F5F5F5;
+				font-size: 16px;
+				text-decoration: none;
+				padding-left: 0;
+			}
+			.accordion-content{
+				background: rgb(245, 245, 245);
+    			border: rgb(245, 245, 245);
+			}
+			.has_border_bottom{
+				p{
+				color: #5F5F5F;
+				font-size: 14px;
+    			margin-bottom: 0.6rem;
+				}
+				.hasborderbottom{
+					&:after{
+					content:"";
+			    	display: block;
+			    	height: 0.5px;
+			    	background-color:#9A9A9A;
+			    	margin-top: 4rem;
+					}
+				}
+				.hasborderbottom2{
+					padding: 0.5rem 0;
+					&:after{
+					content:"";
+			    	display: block;
+			    	height: 1px;
+			    	background-color:#9A9A9A;
+			    	margin-top: 1rem;
+					}
+				}
+				.hasborderbottom3{
+					padding: 0.5rem 0;
+					&:after{
+					content:"";
+			    	display: block;
+			    	height: 1px;
+			    	background-color:#9A9A9A;
+			    	margin-top: 1rem;
+					}
+				}
+			}
+		}
+	}
+}

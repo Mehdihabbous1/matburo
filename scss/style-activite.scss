@@ -1,0 +1,177 @@
+.row-full, .row-full-boulangerie{
+	@extend .row;
+	max-width: 100%;
+	position: relative;
+}
+.content__secteur--activite{
+	@extend .content__experience;
+	.has-background{
+		&:after{
+		    	content: "";
+			    display: block;
+			    background-color: #2236AA;
+			    position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 50%;
+			    opacity: 0.6;
+			    @media screen and (max-width: 39.9375em) {
+				    display: none;
+		    	} 
+		    }
+
+	}
+	.content__experience--title{
+		color: #2236AA;
+	}
+}
+
+/*.content__boulangerie{
+	.row-full-boulangerie{
+		flex-direction: row-reverse;
+		& > .columns {
+			padding: 0;
+		}
+		.b_txt{
+	        position: absolute;
+		    top: 50%;
+		    left: 0;
+		    right: 0;
+		    margin: 0 auto;
+		    transform: translateY(-50%);
+		    max-width: $global-width;
+		    .content__experience--descri{
+				padding-left: 7%;
+				.content__experience--title{
+					padding-bottom: 2rem;
+					.has_border{
+					font-size: 30px;
+			    	color: #2236AA;  
+				    padding-bottom: 23px; 
+			    	position: relative;
+				    &:after{
+				    	content:"";
+				    	display: block;
+				    	width: 72px;
+				    	height: 4px;
+				    	background-color:$yellow;
+				    	position: absolute;
+				    	bottom: 0;
+				    	}
+					}
+				}
+				.parag2{
+		    	& > p{
+		    		font-size: 16px;
+    				color: #5F5F5F;
+		    		}
+		    	}
+		    	.experience__btn{
+					margin-top: 2rem;
+				}
+			}
+		    
+		}
+	}
+}*/
+.content__boulangerie{
+	@extend .content__experience;
+	.row-full{
+		flex-direction: row-reverse;
+		.b_txt{
+			.content__experience--descri{
+			padding-left: 0%;
+
+			@media screen and (max-width: 39.9375em) {
+			    padding-left: 5%;
+		    } 
+			}
+		}
+		
+	}
+}
+.content__snacking{
+	@extend .content__boulangerie;
+}
+.content__boulangerie{
+	.content__boulangerie--descri{
+		padding-left: 7%;
+	}
+	.color__right{
+		background-color: #F5F5F5;
+	}		
+}
+
+.content__restauration{
+	@extend .content__experience;
+}
+.content__commerce{
+	@extend .content__experience;
+}
+
+.content_activite_devis{
+	@extend .content_fidelite_devis;
+}
+
+
+
+.content__devis{
+	text-align: center;
+	position: relative;
+	.content__devis--descri{
+		position: absolute;
+	    right: 0;
+	    left: 0;
+	    top: 45%;
+	    bottom: 0;
+	    transform: translateY(-50%);
+	    z-index: 2;
+	    justify-content: center;
+    	color: #fff;
+			.has_border{
+		    padding-bottom: 15px;
+		    display: flex;
+		    justify-content: center;
+		    position: relative;
+		    &:after{
+		    	content:"";
+		    	display: block;
+		    	width: 72px;
+		    	height: 4px;
+		    	background-color:$yellow;
+		    	position: absolute;
+		    	bottom: 0;
+		    	}
+			}
+			.parag{
+				display: flex;
+				justify-content: center;
+				    padding: 2rem;
+				p{
+					width: 25%;
+				}
+			}
+			.btn__contact{
+		    left: 0;
+		    top: 100%;
+		    button{
+		    	color: #fff !important;
+		    	border-color: #fff !important;
+    			}
+			}
+	}
+	&:after{
+	    content:"";
+		display: block;
+		background-color: #2236AA;
+		position: absolute;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: 0.6;
+	    }
+}
+
+

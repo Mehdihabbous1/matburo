@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.525" height="21.414" viewBox="0 0 12.525 21.414">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #9a9a9a;
+      }
+    </style>
+  </defs>
+  <path id="Next" class="cls-1" d="M0,1.111,1.111,0l10,10-10,10L0,18.889,8.889,10,0,1.111Z" transform="translate(0.707 0.707)"/>
+</svg>

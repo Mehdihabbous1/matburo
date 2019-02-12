@@ -1,0 +1,146 @@
+
+.content__solution__securite{
+	@extend .content__commerce--detail;
+		h3{
+			width: 59%;
+		}
+}
+.content__securite__tiroir{
+	@extend .content__activite;
+	height: 33rem;
+	position: relative;
+	.row{
+		max-width: 50rem;
+		.title{
+			padding-bottom: 3rem;
+		}
+		.fidelite_item{
+			text-align: center;
+		}
+	}
+	.activite_column{
+		
+		h3{
+			font-size: 20px;
+			text-align: center;
+			color: #2236AA;
+		}
+	}    
+}
+.securite__video{
+	.row{
+		max-width: 50rem;
+	}
+	.video{
+			position: relative;
+			bottom: 7rem;
+    		left: 0;
+    		right: 0;
+			.play{
+				position: absolute;
+    			top: 45%;
+    			right: 0;
+    			left: 0;
+    			text-align: center;
+			}
+		}
+}
+.content__securite__pratique{
+	@extend .content__experience;
+	.has_border{
+		width: 45%;
+	}
+}
+
+.content__securite--technologie{
+	@extend .content__experience;
+	.row-full{
+		flex-direction: row-reverse;
+		.b_txt{
+			.content__experience--descri{
+				padding-left: 0;
+				@media screen and (max-width: 39.9375em) {
+				    padding-left: 1rem;
+		    	} 
+				.has_border{
+					width: 70%;
+				}
+				.parag2{ 
+					p{
+						width: 85%; 
+					}	
+				}
+			}
+		}	
+	}
+}
+
+.content__securite__surveillance{
+	@extend .content__activite;
+	background: $white;
+	.row{
+		max-width: 65rem;
+		.title{
+			padding-bottom: 3rem;
+		}
+		.fidelite_item{
+			text-align: center;
+		}
+		.activite_column{
+			h3{
+				font-size: 20px;
+			    text-align: center;
+			    padding-top: 2rem;
+			    color: #2236AA;
+			}
+		}
+	}	
+	@media screen and (max-width: 39.9375em) {
+	    padding-bottom: 5rem; 
+	} 
+	   
+}
+
+.content__securite__preuve{
+	@extend .content__experience;
+}
+
+.content__securite--différence{
+	@extend .content__experience;
+	.row-full{
+		flex-direction: row-reverse;
+		.background_image{
+			position: relative;
+			.smartphone{
+				position: absolute;
+    			top: 20%;
+    			@media screen and (max-width: 39.9375em) {
+				    width: 100px;
+				    top: 22%;
+		    	} 
+			}
+		}
+		.b_txt{
+			.content__experience--descri{
+				padding-left: 0;
+				@media screen and (max-width: 39.9375em) {
+				    padding-left: 1rem;
+		    	} 
+				.has_border{
+					width: 70%;
+				}
+				.parag2{ 
+					p{
+						width: 85%; 
+					}	
+				}
+			}
+		}
+	}
+}
+
+.content_securite_devis{
+	@extend .content_fidelite_devis;	
+}
+
+

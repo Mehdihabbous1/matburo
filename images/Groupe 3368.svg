@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <g id="Groupe_3368" data-name="Groupe 3368" transform="translate(-558 -2009)">
+    <g id="Ellipse_20" data-name="Ellipse 20" transform="translate(558 2009)" fill="#fff" stroke="#9a9a9a" stroke-width="1">
+      <circle cx="30" cy="30" r="30" stroke="none"/>
+      <circle cx="30" cy="30" r="29.5" fill="none"/>
+    </g>
+    <path id="Next" d="M0,1.111,1.111,0l10,10-10,10L0,18.889,8.889,10,0,1.111Z" transform="translate(582 2029)" fill="#fff" stroke="#9a9a9a" stroke-width="1"/>
+  </g>
+</svg>
